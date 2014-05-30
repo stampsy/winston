@@ -1,4 +1,11 @@
-# winston [![Build Status](https://secure.travis-ci.org/flatiron/winston.png?branch=master)](http://travis-ci.org/flatiron/winston)
+## About this fork
+This fork contains additional transport "FlushedFile" ( https://github.com/stampsy/winston/blob/master/lib/winston/transports/flushedFile.js ) based on trhansport "File" that doesn't use stream drain event - so it works in Node v0.10+
+
+This transport solves:
+https://github.com/flatiron/winston/issues/227
+https://github.com/flatiron/winston/issues/222
+
+## Winston
 
 A multi-transport async logging library for node.js. <span style="font-size:28px; font-weight:bold;">&quot;CHILL WINSTON! ... I put it in the logs.&quot;</span>
 
